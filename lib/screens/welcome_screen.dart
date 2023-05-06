@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/animation/animation_controller.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:flutter/src/widgets/ticker_provider.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:home_coach/screens/exercises_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
+  static const String id = "welcome_screen";
 
   @override
   State<WelcomeScreen> createState() => _WelcomeScreenState();
@@ -46,47 +44,43 @@ class _WelcomeScreenState extends State<WelcomeScreen>
     return Scaffold(
       backgroundColor: colorTweanAnimation.value,
       body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24.0),
+
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 25.0),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(15.0),
-                      child: AnimatedTextKit(
-                        animatedTexts: [
-                          TypewriterAnimatedText(
-                            "Home Coach",
-                            textStyle: const TextStyle(
-                              fontSize: 30.0,
-                              color: Colors.black,
-                              fontWeight: FontWeight.w900,
-                            ),
-                            textAlign: TextAlign.center,
-                            speed: const Duration(milliseconds: 200),
-                          ),
-                        ],
+              Container(
+                  margin: const EdgeInsets.all(40.0),
+                  child: AnimatedTextKit(
+                    animatedTexts: [
+                      TypewriterAnimatedText(
+                        "Home Coach",
+                        textStyle: const TextStyle(
+                          fontSize: 30.0,
+                          color: Colors.black,
+                          fontWeight: FontWeight.w900,
+
+                        ),
+                        textAlign: TextAlign.center,
+                        speed: const Duration(milliseconds: 200),
                       ),
-                    ),
-                    // add image inside widget  with circular borders
-                    const CircleAvatar(
-                      // backgroundImage: AssetImage("appImages/logo.jpg"),
-                      radius: 150,
-                    ),
-                  ],
+                    ],
+                  ),
+                ),
+              const Padding(
+                padding: EdgeInsets.symmetric(vertical: 25.0),
+                child: CircleAvatar(
+                  backgroundImage: AssetImage("appImages/logo.jpg"),
+                  radius: 150,
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(
                     vertical: 25.0, horizontal: 20.0),
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, ExercisesScreen.id);
+                  },
                   style: ButtonStyle(
                     elevation: MaterialStateProperty.all(5.0),
                     backgroundColor:
@@ -112,7 +106,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
             ],
           ),
         ),
-      ),
+
     );
   }
 }
