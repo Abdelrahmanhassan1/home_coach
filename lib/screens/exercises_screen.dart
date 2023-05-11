@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:home_coach/screens/exercise_screen1.dart';
+import 'package:home_coach/screens/start_chatting_screen.dart';
 
 class ExercisesScreen extends StatefulWidget {
   const ExercisesScreen({Key? key}) : super(key: key);
@@ -13,6 +14,36 @@ class _ExercisesScreenState extends State<ExercisesScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: Container(
+        height: 40.0,
+        width: 180.0,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(30.0),
+        ),
+        child: ElevatedButton(
+          style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.all(Colors.green)),
+          onPressed: () {
+            Navigator.pushNamed(context, StartChatting.id);
+          },
+          child: const Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Text(
+                "Chat With Doctor",
+                style: TextStyle(color: Colors.black),
+              ),
+              SizedBox(
+                width: 10.0,
+              ),
+              Icon(
+                Icons.chat,
+                color: Colors.black,
+              )
+            ],
+          ),
+        ),
+      ),
       appBar: AppBar(
         title: const Text(
           "Exercises",
@@ -36,7 +67,6 @@ class _ExercisesScreenState extends State<ExercisesScreen> {
                 ),
                 onPressed: () {
                   Navigator.pushNamed(context, ExerciseScreen.id);
-
                 },
               ),
             ),
