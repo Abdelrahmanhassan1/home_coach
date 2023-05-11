@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:home_coach/screens/exercise_screen1.dart';
 
 class ExercisesScreen extends StatefulWidget {
   const ExercisesScreen({Key? key}) : super(key: key);
-  static const String id = "exercise_screen";
+  static const String id = "exercises_screen";
 
   @override
   State<ExercisesScreen> createState() => _ExercisesScreenState();
@@ -21,23 +22,28 @@ class _ExercisesScreenState extends State<ExercisesScreen> {
       ),
       body: ListView(
         children: [
-           Padding(
-             padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-             child: Container(
-                width: double.infinity,
-                color: Colors.blue,
-                height: 100.0,
-                child: TextButton(
-                  child: const Text(
-                    "Range of Motion",
-                    style: TextStyle(color: Colors.black, fontSize: 20.0),
-                  ),
-                  onPressed: () {},
-                ),
-              ),
-           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+            padding:
+                const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+            child: Container(
+              width: double.infinity,
+              color: Colors.blue,
+              height: 100.0,
+              child: TextButton(
+                child: const Text(
+                  "Range of Motion",
+                  style: TextStyle(color: Colors.black, fontSize: 20.0),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, ExerciseScreen.id);
+
+                },
+              ),
+            ),
+          ),
+          Padding(
+            padding:
+                const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
             child: Container(
               width: double.infinity,
               color: Colors.green,
@@ -52,7 +58,8 @@ class _ExercisesScreenState extends State<ExercisesScreen> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+            padding:
+                const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
             child: Container(
               width: double.infinity,
               color: Colors.amber,
@@ -67,7 +74,8 @@ class _ExercisesScreenState extends State<ExercisesScreen> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+            padding:
+                const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
             child: Container(
               width: double.infinity,
               color: Colors.cyan,
@@ -82,7 +90,8 @@ class _ExercisesScreenState extends State<ExercisesScreen> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+            padding:
+                const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
             child: Container(
               width: double.infinity,
               color: Colors.deepPurpleAccent,
@@ -97,51 +106,8 @@ class _ExercisesScreenState extends State<ExercisesScreen> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-            child: Container(
-              width: double.infinity,
-              color: Colors.blue,
-              height: 100.0,
-              child: TextButton(
-                child: const Text(
-                  "Range of Motion",
-                  style: TextStyle(color: Colors.black, fontSize: 20.0),
-
-                ),
-                onPressed: () {},
-              ),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-            child: Container(
-              width: double.infinity,
-              color: Colors.blue,
-              height: 100.0,
-              child: TextButton(
-                child: const Text(
-                  "Range of Motion",
-                  style: TextStyle(color: Colors.black, fontSize: 20.0),
-                ),
-                onPressed: () {},
-              ),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-            child: Container(
-              width: double.infinity,
-              color: Colors.blue,
-              height: 100.0,
-              child: TextButton(
-                child: const Text(
-                  "Range of Motion",
-                  style: TextStyle(color: Colors.black, fontSize: 20.0),
-
-                ),
-                onPressed: () {},
-              ),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+            padding:
+                const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
             child: Container(
               width: double.infinity,
               color: Colors.blue,
@@ -155,12 +121,54 @@ class _ExercisesScreenState extends State<ExercisesScreen> {
               ),
             ),
           ),
-
-
-
-
-
-
+          Padding(
+            padding:
+                const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+            child: Container(
+              width: double.infinity,
+              color: Colors.blue,
+              height: 100.0,
+              child: TextButton(
+                child: const Text(
+                  "Range of Motion",
+                  style: TextStyle(color: Colors.black, fontSize: 20.0),
+                ),
+                onPressed: () {},
+              ),
+            ),
+          ),
+          Padding(
+            padding:
+                const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+            child: Container(
+              width: double.infinity,
+              color: Colors.blue,
+              height: 100.0,
+              child: TextButton(
+                child: const Text(
+                  "Range of Motion",
+                  style: TextStyle(color: Colors.black, fontSize: 20.0),
+                ),
+                onPressed: () {},
+              ),
+            ),
+          ),
+          Padding(
+            padding:
+                const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+            child: Container(
+              width: double.infinity,
+              color: Colors.blue,
+              height: 100.0,
+              child: TextButton(
+                child: const Text(
+                  "Range of Motion",
+                  style: TextStyle(color: Colors.black, fontSize: 20.0),
+                ),
+                onPressed: () {},
+              ),
+            ),
+          ),
         ],
       ),
     );

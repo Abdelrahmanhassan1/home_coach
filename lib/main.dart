@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:home_coach/screens/exercise_screen1.dart';
 import 'package:home_coach/screens/exercises_screen.dart';
 import 'package:home_coach/screens/welcome_screen.dart';
-
 
 void main() {
   runApp(const MyApp());
@@ -17,8 +17,10 @@ class MyApp extends StatelessWidget {
       title: 'Home Coach',
       theme: ThemeData.light(),
       initialRoute: WelcomeScreen.id,
-      routes: {WelcomeScreen.id: (context) => const WelcomeScreen(),
-        ExercisesScreen.id : (context) => const ExercisesScreen(),
+      routes: {
+        WelcomeScreen.id: (context) => const WelcomeScreen(),
+        ExercisesScreen.id: (context) => const ExercisesScreen(),
+        ExerciseScreen.id: (context) => const ExerciseScreen(),
       },
     );
   }
