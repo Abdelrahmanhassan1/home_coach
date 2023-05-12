@@ -17,7 +17,7 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  // final _auth = FirebaseAuth.instance;
+  final _auth = FirebaseAuth.instance;
   bool showSpinner = false;
   late String email;
   late String password;
@@ -25,6 +25,9 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Log In"),
+      ),
       backgroundColor: Colors.white,
       body: ModalProgressHUD(
         inAsyncCall: showSpinner,
@@ -75,42 +78,41 @@ class _LoginScreenState extends State<LoginScreen> {
               RoundedButton(
                 btnColor: Colors.lightBlueAccent,
                 btnText: "Log In",
-                onPressed: (){},
-                // onPressed: () async {
-                //   setState(() {
-                //     showSpinner = true;
-                //   });
-                //   try {
-                //     final user = await _auth.signInWithEmailAndPassword(
-                //         email: email, password: password);
-                //
-                //     if (user != null) {
-                //       Navigator.pushNamed(context, ChatScreen.id);
-                //     }
-                //     setState(() {
-                //       showSpinner = false;
-                //     });
-                //   } catch (e) {
-                //     CoolAlert.show(
-                //       context: context,
-                //       type: CoolAlertType.error,
-                //       title: "Error",
-                //       titleTextStyle: const TextStyle(
-                //         color: Colors.white,
-                //         fontSize: 30,
-                //       ),
-                //       text: "Invalid email or password",
-                //       textTextStyle: const TextStyle(
-                //         color: Colors.white,
-                //         fontSize: 20,
-                //       ),
-                //     );
-                //
-                //     setState(() {
-                //       showSpinner = false;
-                //     });
-                //   }
-                // },
+                onPressed: () async {
+                  setState(() {
+                    showSpinner = true;
+                  });
+                  try {
+                    final user = await _auth.signInWithEmailAndPassword(
+                        email: email, password: password);
+
+                    if (user != null) {
+                      Navigator.pushNamed(context, ChatScreen.id);
+                    }
+                    setState(() {
+                      showSpinner = false;
+                    });
+                  } catch (e) {
+                    CoolAlert.show(
+                      context: context,
+                      type: CoolAlertType.error,
+                      title: "Error",
+                      titleTextStyle: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 30,
+                      ),
+                      text: "Invalid email or password",
+                      textTextStyle: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                    );
+
+                    setState(() {
+                      showSpinner = false;
+                    });
+                  }
+                },
               ),
             ],
           ),

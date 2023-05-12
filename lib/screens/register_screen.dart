@@ -22,11 +22,14 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
   late String password;
   bool showSpinner = false;
 
-  // final _auth = FirebaseAuth.instance;
+  final _auth = FirebaseAuth.instance;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Register"),
+      ),
       backgroundColor: Colors.white,
       body: ModalProgressHUD(
         inAsyncCall: showSpinner,
@@ -76,34 +79,33 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               ),
               RoundedButton(
                   btnText: 'Register',
-                  onPressed: (){},
-                  // onPressed: () async {
-                  //   setState(() {
-                  //     showSpinner = true;
-                  //   });
-                  //   try {
-                  //     final newUser =
-                  //     await _auth.createUserWithEmailAndPassword(
-                  //         email: email, password: password);
-                  //
-                  //     if (newUser != null) {
-                  //       Navigator.pushNamed(context, ChatScreen.id);
-                  //     }
-                  //
-                  //     setState(() {
-                  //       showSpinner = false;
-                  //     });
-                  //   } catch (e) {
-                  //     CoolAlert.show(
-                  //         context: context,
-                  //         type: CoolAlertType.error,
-                  //         title: "Error",
-                  //         text: e.toString(),
-                  //         onConfirmBtnTap: () {
-                  //           Navigator.pop(context);
-                  //         });
-                  //   }
-                  // },
+                  onPressed: () async {
+                    setState(() {
+                      showSpinner = true;
+                    });
+                    try {
+                      final newUser =
+                      await _auth.createUserWithEmailAndPassword(
+                          email: email, password: password);
+
+                      if (newUser != null) {
+                        Navigator.pushNamed(context, ChatScreen.id);
+                      }
+
+                      setState(() {
+                        showSpinner = false;
+                      });
+                    } catch (e) {
+                      CoolAlert.show(
+                          context: context,
+                          type: CoolAlertType.error,
+                          title: "Error",
+                          text: e.toString(),
+                          onConfirmBtnTap: () {
+                            Navigator.pop(context);
+                          });
+                    }
+                  },
                   btnColor: Colors.blueAccent),
             ],
           ),

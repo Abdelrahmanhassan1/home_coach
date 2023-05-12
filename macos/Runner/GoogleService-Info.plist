@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>413949886964-medeup85atimalqhh4dqsdpok10hhs7e.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.413949886964-medeup85atimalqhh4dqsdpok10hhs7e</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAzPLcPLo41jGRHl8Nqb3vEPiRPT4INAw0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>413949886964</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.homeCoach</string>
+	<key>PROJECT_ID</key>
+	<string>home-coach-e0e0c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>home-coach-e0e0c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:413949886964:ios:57c969c075dce922abb9a1</string>
+</dict>
+</plist>

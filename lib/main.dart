@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:home_coach/screens/chat_screen.dart';
 import 'package:home_coach/screens/exercise_screen1.dart';
 import 'package:home_coach/screens/exercises_screen.dart';
 import 'package:home_coach/screens/login_screen.dart';
 import 'package:home_coach/screens/register_screen.dart';
 import 'package:home_coach/screens/start_chatting_screen.dart';
 import 'package:home_coach/screens/welcome_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -24,10 +31,10 @@ class MyApp extends StatelessWidget {
         WelcomeScreen.id: (context) => const WelcomeScreen(),
         ExercisesScreen.id: (context) => const ExercisesScreen(),
         ExerciseScreen.id: (context) => const ExerciseScreen(),
-
         StartChatting.id: (context) => const StartChatting(),
         LoginScreen.id: (context) => const LoginScreen(),
         RegistrationScreen.id: (context) => const RegistrationScreen(),
+        ChatScreen.id: (context) => const ChatScreen(),
       },
     );
   }

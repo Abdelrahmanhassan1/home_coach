@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "413949886964",
+    "project_id": "home-coach-e0e0c",
+    "storage_bucket": "home-coach-e0e0c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413949886964:android:cef4295cee24c9afabb9a1",
+        "android_client_info": {
+          "package_name": "com.example.home_coach"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413949886964-o1mv6pvc61175atbr1voqdto2l6dggv9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHGwbEaDiJrjTwoKDyccF-GOrC8gZmbRI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413949886964-o1mv6pvc61175atbr1voqdto2l6dggv9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "413949886964-medeup85atimalqhh4dqsdpok10hhs7e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.homeCoach"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

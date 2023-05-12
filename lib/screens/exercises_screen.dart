@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:home_coach/screens/exercise_screen1.dart';
 import 'package:home_coach/screens/start_chatting_screen.dart';
+import "package:home_coach/UI/exercise_tile.dart";
 
 class ExercisesScreen extends StatefulWidget {
   const ExercisesScreen({Key? key}) : super(key: key);
@@ -26,9 +26,9 @@ class _ExercisesScreenState extends State<ExercisesScreen> {
           onPressed: () {
             Navigator.pushNamed(context, StartChatting.id);
           },
-          child: const Row(
+          child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
-            children: [
+            children: const [
               Text(
                 "Chat With Doctor",
                 style: TextStyle(color: Colors.black),
@@ -52,155 +52,38 @@ class _ExercisesScreenState extends State<ExercisesScreen> {
         backgroundColor: Colors.black12,
       ),
       body: ListView(
-        children: [
-          Padding(
-            padding:
-                const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-            child: Container(
-              width: double.infinity,
-              color: Colors.blue,
-              height: 100.0,
-              child: TextButton(
-                child: const Text(
-                  "Range of Motion",
-                  style: TextStyle(color: Colors.black, fontSize: 20.0),
-                ),
-                onPressed: () {
-                  Navigator.pushNamed(context, ExerciseScreen.id);
-                },
-              ),
-            ),
+        children: const [
+          ExerciseTile(
+            innerText: "Range of Motion",
+            backgroundColor: Colors.cyan,
           ),
-          Padding(
-            padding:
-                const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-            child: Container(
-              width: double.infinity,
-              color: Colors.green,
-              height: 100.0,
-              child: TextButton(
-                child: const Text(
-                  "Up and Down",
-                  style: TextStyle(color: Colors.black, fontSize: 20.0),
-                ),
-                onPressed: () {},
-              ),
-            ),
+          ExerciseTile(
+            innerText: "Up and Down",
+            backgroundColor: Colors.blueAccent,
           ),
-          Padding(
-            padding:
-                const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-            child: Container(
-              width: double.infinity,
-              color: Colors.amber,
-              height: 100.0,
-              child: TextButton(
-                child: const Text(
-                  "Abduction",
-                  style: TextStyle(color: Colors.black, fontSize: 20.0),
-                ),
-                onPressed: () {},
-              ),
-            ),
+          ExerciseTile(
+            innerText: "Up and Down",
+            backgroundColor: Colors.blueAccent,
           ),
-          Padding(
-            padding:
-                const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-            child: Container(
-              width: double.infinity,
-              color: Colors.cyan,
-              height: 100.0,
-              child: TextButton(
-                child: const Text(
-                  "Push Ups",
-                  style: TextStyle(color: Colors.black, fontSize: 20.0),
-                ),
-                onPressed: () {},
-              ),
-            ),
+          ExerciseTile(
+            innerText: "Up and Down",
+            backgroundColor: Colors.blueAccent,
           ),
-          Padding(
-            padding:
-                const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-            child: Container(
-              width: double.infinity,
-              color: Colors.deepPurpleAccent,
-              height: 100.0,
-              child: TextButton(
-                child: const Text(
-                  "Biceps",
-                  style: TextStyle(color: Colors.black, fontSize: 20.0),
-                ),
-                onPressed: () {},
-              ),
-            ),
+          ExerciseTile(
+            innerText: "Up and Down",
+            backgroundColor: Colors.blueAccent,
           ),
-          Padding(
-            padding:
-                const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-            child: Container(
-              width: double.infinity,
-              color: Colors.blue,
-              height: 100.0,
-              child: TextButton(
-                child: const Text(
-                  "Range of Motion",
-                  style: TextStyle(color: Colors.black, fontSize: 20.0),
-                ),
-                onPressed: () {},
-              ),
-            ),
+          ExerciseTile(
+            innerText: "Up and Down",
+            backgroundColor: Colors.blueAccent,
           ),
-          Padding(
-            padding:
-                const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-            child: Container(
-              width: double.infinity,
-              color: Colors.blue,
-              height: 100.0,
-              child: TextButton(
-                child: const Text(
-                  "Range of Motion",
-                  style: TextStyle(color: Colors.black, fontSize: 20.0),
-                ),
-                onPressed: () {},
-              ),
-            ),
-          ),
-          Padding(
-            padding:
-                const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-            child: Container(
-              width: double.infinity,
-              color: Colors.blue,
-              height: 100.0,
-              child: TextButton(
-                child: const Text(
-                  "Range of Motion",
-                  style: TextStyle(color: Colors.black, fontSize: 20.0),
-                ),
-                onPressed: () {},
-              ),
-            ),
-          ),
-          Padding(
-            padding:
-                const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-            child: Container(
-              width: double.infinity,
-              color: Colors.blue,
-              height: 100.0,
-              child: TextButton(
-                child: const Text(
-                  "Range of Motion",
-                  style: TextStyle(color: Colors.black, fontSize: 20.0),
-                ),
-                onPressed: () {},
-              ),
-            ),
+          ExerciseTile(
+            innerText: "Up and Down",
+            backgroundColor: Colors.blueAccent,
           ),
         ],
       ),
     );
   }
 }
+
