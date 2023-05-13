@@ -68,6 +68,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                   ),
                 ),
               const Padding(
+
                 padding: EdgeInsets.symmetric(vertical: 25.0),
                 child: CircleAvatar(
                   backgroundImage: AssetImage("appImages/logo.jpg"),

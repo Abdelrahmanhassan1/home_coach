@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:home_coach/screens/chat_screen.dart';
-import 'package:home_coach/screens/exercise_screen1.dart';
+import 'package:home_coach/ExerciseScreens/exercise1.dart';
 import 'package:home_coach/screens/exercises_screen.dart';
 import 'package:home_coach/screens/login_screen.dart';
 import 'package:home_coach/screens/register_screen.dart';
