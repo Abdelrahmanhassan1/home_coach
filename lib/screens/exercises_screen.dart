@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:home_coach/screens/start_chatting_screen.dart';
 import "package:home_coach/UI/exercise_tile.dart";
+import 'package:home_coach/ExerciseScreens/exercise1.dart';
+import 'package:home_coach/ExerciseScreens/exercise2.dart';
+import 'package:home_coach/ExerciseScreens/exercise3.dart';
+import 'package:home_coach/ExerciseScreens/exercise4.dart';
 
 class ExercisesScreen extends StatefulWidget {
   const ExercisesScreen({Key? key}) : super(key: key);
@@ -54,36 +58,47 @@ class _ExercisesScreenState extends State<ExercisesScreen> {
       body: ListView(
         children: const [
           ExerciseTile(
+            innerText: "Leg Raises",
+            backgroundColor: Colors.cyan,
+            id: ExerciseScreen1.id,
+          ),
+          ExerciseTile(
             innerText: "Range of Motion",
             backgroundColor: Colors.cyan,
+            id: ExerciseScreen2.id,
           ),
           ExerciseTile(
-            innerText: "Up and Down",
-            backgroundColor: Colors.blueAccent,
+            innerText: "Knee to Chest",
+            backgroundColor: Colors.cyan,
+            id: ExerciseScreen3.id,
           ),
           ExerciseTile(
-            innerText: "Up and Down",
-            backgroundColor: Colors.blueAccent,
+            innerText: "Hamstring Stretch",
+            backgroundColor: Colors.cyan,
+            id: ExerciseScreen4.id,
           ),
           ExerciseTile(
-            innerText: "Up and Down",
-            backgroundColor: Colors.blueAccent,
+            innerText: "Leg Raises",
+            backgroundColor: Colors.cyan,
+            id: ExerciseScreen1.id,
           ),
           ExerciseTile(
-            innerText: "Up and Down",
-            backgroundColor: Colors.blueAccent,
+            innerText: "Range of Motion",
+            backgroundColor: Colors.cyan,
+            id: ExerciseScreen2.id,
           ),
           ExerciseTile(
-            innerText: "Up and Down",
-            backgroundColor: Colors.blueAccent,
+            innerText: "Knee to Chest",
+            backgroundColor: Colors.cyan,
+            id: ExerciseScreen3.id,
           ),
           ExerciseTile(
-            innerText: "Up and Down",
-            backgroundColor: Colors.blueAccent,
+            innerText: "Hamstring Stretch",
+            backgroundColor: Colors.cyan,
+            id: ExerciseScreen4.id,
           ),
         ],
       ),
     );
   }
 }
-

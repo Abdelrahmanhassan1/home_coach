@@ -7,22 +7,22 @@ import 'package:home_coach/ExerciseComponents/exercise_button_timer.dart';
 
 import 'dart:async';
 
-class ExerciseScreen1 extends StatefulWidget {
-  const ExerciseScreen1({Key? key}) : super(key: key);
-  static const String id = "Exercise_Screen1";
+class ExerciseScreen4 extends StatefulWidget {
+  const ExerciseScreen4({Key? key}) : super(key: key);
+  static const String id = "Exercise_Screen4";
 
   @override
-  State<ExerciseScreen1> createState() => _ExerciseScreen1State();
+  State<ExerciseScreen4> createState() => _ExerciseScreen4State();
 }
 
-class _ExerciseScreen1State extends State<ExerciseScreen1> {
+class _ExerciseScreen4State extends State<ExerciseScreen4> {
   late Timer _timer = Timer.periodic(
     const Duration(seconds: 1),
     (Timer timer) {},
   );
   late String btnText = "Start";
 
-  int _start = 10;
+  int _start = 40;
 
   void startTimer() {
     const oneSec = Duration(seconds: 1);

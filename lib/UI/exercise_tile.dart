@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:home_coach/ExerciseScreens/exercise1.dart';
 
 class ExerciseTile extends StatelessWidget {
   const ExerciseTile({
     super.key,
     required this.innerText,
     required this.backgroundColor,
+    required this.id,
   });
 
   final String innerText;
   final Color backgroundColor;
+  final String id;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +26,7 @@ class ExerciseTile extends StatelessWidget {
             style: const TextStyle(color: Colors.black, fontSize: 20.0),
           ),
           onPressed: () {
-            Navigator.pushNamed(context, ExerciseScreen.id);
+            Navigator.pushNamed(context, id);
           },
         ),
       ),
