@@ -55,7 +55,7 @@ class _ExerciseScreen4State extends State<ExerciseScreen4> {
       appBar: AppBar(
         centerTitle: true,
         title: const ExerciseTitle(title: "Wrist Extension"),
-        backgroundColor: const Color.fromARGB(255, 7, 175, 175),
+        backgroundColor: Colors.lightBlueAccent,
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,

@@ -17,8 +17,12 @@ class ExerciseTile extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
       child: Container(
+        decoration: BoxDecoration(
+          borderRadius: const BorderRadius.all(Radius.circular(20.0)),
+          color: backgroundColor,
+        ),
         width: double.infinity,
-        color: backgroundColor,
+
         height: 100.0,
         child: TextButton(
           child: Text(

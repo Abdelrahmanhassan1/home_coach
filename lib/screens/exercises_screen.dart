@@ -5,6 +5,14 @@ import 'package:home_coach/ExerciseScreens/exercise1.dart';
 import 'package:home_coach/ExerciseScreens/exercise2.dart';
 import 'package:home_coach/ExerciseScreens/exercise3.dart';
 import 'package:home_coach/ExerciseScreens/exercise4.dart';
+import 'package:home_coach/ExerciseScreens/exercise5.dart';
+import 'package:home_coach/ExerciseScreens/exercise6.dart';
+import 'package:home_coach/ExerciseScreens/exercise7.dart';
+import 'package:home_coach/ExerciseScreens/exercise8.dart';
+import 'package:home_coach/ExerciseScreens/exercise9.dart';
+import 'package:home_coach/ExerciseScreens/exercise10.dart';
+import 'package:home_coach/ExerciseScreens/exercise11.dart';
+import 'package:home_coach/ExerciseScreens/exercise12.dart';
 
 class ExercisesScreen extends StatefulWidget {
   const ExercisesScreen({Key? key}) : super(key: key);
@@ -26,7 +34,8 @@ class _ExercisesScreenState extends State<ExercisesScreen> {
         ),
         child: ElevatedButton(
           style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all(Colors.green)),
+              backgroundColor:
+                  MaterialStateProperty.all(Colors.lightBlueAccent)),
           onPressed: () {
             Navigator.pushNamed(context, StartChatting.id);
           },
@@ -35,67 +44,88 @@ class _ExercisesScreenState extends State<ExercisesScreen> {
             children: const [
               Text(
                 "Chat With Doctor",
-                style: TextStyle(color: Colors.black),
+                style: TextStyle(
+                    color: Colors.black54, fontWeight: FontWeight.bold),
               ),
               SizedBox(
                 width: 10.0,
               ),
               Icon(
                 Icons.chat,
-                color: Colors.black,
+                color: Colors.white,
               )
             ],
           ),
         ),
       ),
       appBar: AppBar(
+        centerTitle: true,
         title: const Text(
           "Exercises",
-          textAlign: TextAlign.center,
         ),
-        backgroundColor: Colors.black12,
+        backgroundColor: Colors.lightBlueAccent,
       ),
       body: ListView(
         children: const [
           ExerciseTile(
             innerText: "Elbow Flexion",
-            backgroundColor: Colors.deepPurpleAccent,
+            backgroundColor: Color(0xfffd7f6f),
             id: ExerciseScreen1.id,
           ),
           ExerciseTile(
             innerText: "Shoulder Flexion",
-            backgroundColor: Colors.cyan,
+            backgroundColor: Color(0xff7eb0d5),
             id: ExerciseScreen2.id,
           ),
           ExerciseTile(
-            innerText: "Knee to Chest",
-            backgroundColor: Colors.cyan,
+            innerText: "Shoulder Abduction",
+            backgroundColor: Color(0xffb2e061),
             id: ExerciseScreen3.id,
           ),
           ExerciseTile(
-            innerText: "Hamstring Stretch",
-            backgroundColor: Colors.cyan,
+            innerText: "Wrist Extension",
+            backgroundColor: Color(0xffbd7ebe),
             id: ExerciseScreen4.id,
           ),
           ExerciseTile(
-            innerText: "Leg Raises",
-            backgroundColor: Colors.cyan,
-            id: ExerciseScreen1.id,
+            innerText: "Chest Press Outs",
+            backgroundColor: Color(0xffffb55a),
+            id: ExerciseScreen5.id,
           ),
           ExerciseTile(
-            innerText: "Range of Motion",
-            backgroundColor: Colors.cyan,
-            id: ExerciseScreen2.id,
+            innerText: "Hip Abduction",
+            backgroundColor: Color(0xffffee65),
+            id: ExerciseScreen6.id,
           ),
           ExerciseTile(
-            innerText: "Knee to Chest",
-            backgroundColor: Colors.cyan,
-            id: ExerciseScreen3.id,
+            innerText: "Hip Flexion",
+            backgroundColor: Color(0xffbeb9db),
+            id: ExerciseScreen7.id,
           ),
           ExerciseTile(
-            innerText: "Hamstring Stretch",
-            backgroundColor: Colors.cyan,
-            id: ExerciseScreen4.id,
+            innerText: "Sitting Hip Abduction",
+            backgroundColor: Color(0xfffdcce5),
+            id: ExerciseScreen8.id,
+          ),
+          ExerciseTile(
+            innerText: "Sitting Hip Flexion",
+            backgroundColor: Color(0xff8bd3c7),
+            id: ExerciseScreen9.id,
+          ),
+          ExerciseTile(
+            innerText: "Bridging",
+            backgroundColor: Color(0xfffd7f6f),
+            id: ExerciseScreen10.id,
+          ),
+          ExerciseTile(
+            innerText: "Heel Slides",
+            backgroundColor: Color(0xff7eb0d5),
+            id: ExerciseScreen11.id,
+          ),
+          ExerciseTile(
+            innerText: "Sitting Knee Extension",
+            backgroundColor: Color(0xffb2e061),
+            id: ExerciseScreen12.id,
           ),
         ],
       ),

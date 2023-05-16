@@ -10,14 +10,10 @@ class StartChatting extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        centerTitle: true,
+        backgroundColor: Colors.lightBlueAccent,
+        title: const Text(
           'Chat With Doctor',
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.w900,
-            color: Colors.white,
-          ),
         ),
       ),
       body: Column(

@@ -7,22 +7,22 @@ import 'package:home_coach/ExerciseComponents/exercise_button_timer.dart';
 
 import 'dart:async';
 
-class ExerciseScreen2 extends StatefulWidget {
-  const ExerciseScreen2({Key? key}) : super(key: key);
-  static const String id = "Exercise_Screen2";
+class ExerciseScreen11 extends StatefulWidget {
+  const ExerciseScreen11({Key? key}) : super(key: key);
+  static const String id = "Exercise_Screen11";
 
   @override
-  State<ExerciseScreen2> createState() => _ExerciseScreen2State();
+  State<ExerciseScreen11> createState() => _ExerciseScreen11State();
 }
 
-class _ExerciseScreen2State extends State<ExerciseScreen2> {
+class _ExerciseScreen11State extends State<ExerciseScreen11> {
   late Timer _timer = Timer.periodic(
     const Duration(seconds: 1),
     (Timer timer) {},
   );
   late String btnText = "Start";
 
-  int _start = 20;
+  int _start = 40;
 
   void startTimer() {
     const oneSec = Duration(seconds: 1);
@@ -54,7 +54,7 @@ class _ExerciseScreen2State extends State<ExerciseScreen2> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const ExerciseTitle(title: "Shoulder Flexion"),
+        title: const ExerciseTitle(title: "Heel Slides"),
         backgroundColor: Colors.lightBlueAccent,
       ),
       body: Column(
@@ -63,10 +63,10 @@ class _ExerciseScreen2State extends State<ExerciseScreen2> {
         children: [
           Column(
             children: const [
-              ExerciseImage(imagePath: "appImages/shoulder_flexion.png"),
+              ExerciseImage(imagePath: "appImages/heel_slides.png"),
               ExerciseDescription(
                 description:
-                    "Stand with your back against a wall, with your feet shoulder-width apart. Raise your arms up to the sides of your head, keeping your elbows bent at 90 degrees. Slowly raise your arms up above your head, keeping your elbows bent. Slowly lower your arms back down to the starting position. Repeat.",
+                    "Lie on your back with your knees bent and your feet flat on the floor. Slowly slide your heel away from your body until your leg is straight. Then slowly bend your knee and slide your heel back to the starting position. Repeat with the other leg.",
               ),
             ],
           ),

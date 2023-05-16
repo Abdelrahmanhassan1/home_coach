@@ -55,7 +55,8 @@ class _ExerciseScreen1State extends State<ExerciseScreen1> {
       appBar: AppBar(
         centerTitle: true,
         title: const ExerciseTitle(title: "Elbow Flexion"),
-        backgroundColor: const Color.fromARGB(255, 7, 175, 175),
+        backgroundColor: Colors.lightBlueAccent,
+
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,

@@ -13,6 +13,7 @@ class ExerciseImage extends StatelessWidget {
     return Container(
       height: 400.0,
       padding: const EdgeInsets.all(30.0),
+
       child: Image.asset(
         imagePath,
         fit: BoxFit.cover,

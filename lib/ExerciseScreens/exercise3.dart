@@ -55,7 +55,7 @@ class _ExerciseScreen3State extends State<ExerciseScreen3> {
       appBar: AppBar(
         centerTitle: true,
         title: const ExerciseTitle(title: "Shoulder Abduction"),
-        backgroundColor: const Color.fromARGB(255, 7, 175, 175),
+        backgroundColor: Colors.lightBlueAccent,
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,

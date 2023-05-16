@@ -64,6 +64,7 @@ class _ChatScreenState extends State<ChatScreen> {
           ),
         ],
         title: const Text('⚡️Chat'),
+        centerTitle: true,
         backgroundColor: Colors.lightBlueAccent,
       ),
       body: SafeArea(
