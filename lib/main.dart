@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:home_coach/screens/camera%20screen.dart';
 import 'package:home_coach/screens/chat_screen.dart';
 import 'package:home_coach/screens/login_screen.dart';
 import 'package:home_coach/screens/welcome_screen.dart';
@@ -23,11 +24,15 @@ Future<void> main() async {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+
       debugShowCheckedModeBanner: false,
       title: 'Home Coach',
+
       theme: ThemeData.light(),
       initialRoute: WelcomeScreen.id,
       routes: {
@@ -39,8 +44,10 @@ class MyApp extends StatelessWidget {
         ChatScreen.id: (context) => const ChatScreen(),
         ExerciseScreen1.id: (context) => const ExerciseScreen1(),
         ExerciseScreen2.id: (context) => const ExerciseScreen2(),
+
         ExerciseScreen3.id: (context) => const ExerciseScreen3(),
         ExerciseScreen4.id: (context) => const ExerciseScreen4(),
+
       },
     );
   }

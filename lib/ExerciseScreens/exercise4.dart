@@ -54,7 +54,7 @@ class _ExerciseScreen4State extends State<ExerciseScreen4> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const ExerciseTitle(title: "Leg Up and Down"),
+        title: const ExerciseTitle(title: "Wrist Extension"),
         backgroundColor: const Color.fromARGB(255, 7, 175, 175),
       ),
       body: Column(
@@ -63,10 +63,10 @@ class _ExerciseScreen4State extends State<ExerciseScreen4> {
         children: [
           Column(
             children: const [
-              ExerciseImage(imagePath: "appImages/leg_expansion.jpg"),
+              ExerciseImage(imagePath: "appImages/wrist_extension.png"),
               ExerciseDescription(
                 description:
-                    "Lie on your back with your legs straight and together. Keeping your legs straight, lift them up toward the ceiling until they form a right angle with your torso. ... Slowly lower your legs back down to the starting position. Repeat 10 times.",
+                    "Extend your wrist by moving your hand up and down.",
               ),
             ],
           ),

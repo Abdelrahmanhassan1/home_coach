@@ -7,22 +7,22 @@ import 'package:home_coach/ExerciseComponents/exercise_button_timer.dart';
 
 import 'dart:async';
 
-class ExerciseScreen3 extends StatefulWidget {
-  const ExerciseScreen3({Key? key}) : super(key: key);
-  static const String id = "Exercise_Screen3";
+class ExerciseScreen4 extends StatefulWidget {
+  const ExerciseScreen4({Key? key}) : super(key: key);
+  static const String id = "Exercise_Screen5";
 
   @override
-  State<ExerciseScreen3> createState() => _ExerciseScreen3State();
+  State<ExerciseScreen4> createState() => _ExerciseScreen4State();
 }
 
-class _ExerciseScreen3State extends State<ExerciseScreen3> {
+class _ExerciseScreen4State extends State<ExerciseScreen4> {
   late Timer _timer = Timer.periodic(
     const Duration(seconds: 1),
     (Timer timer) {},
   );
   late String btnText = "Start";
 
-  int _start = 30;
+  int _start = 40;
 
   void startTimer() {
     const oneSec = Duration(seconds: 1);
@@ -54,7 +54,7 @@ class _ExerciseScreen3State extends State<ExerciseScreen3> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const ExerciseTitle(title: "Shoulder Abduction"),
+        title: const ExerciseTitle(title: "Chest Press Outs"),
         backgroundColor: const Color.fromARGB(255, 7, 175, 175),
       ),
       body: Column(
@@ -63,10 +63,10 @@ class _ExerciseScreen3State extends State<ExerciseScreen3> {
         children: [
           Column(
             children: const [
-              ExerciseImage(imagePath: "appImages/shoulder_abduction.png"),
+              ExerciseImage(imagePath: "appImages/chest_press_outs.png"),
               ExerciseDescription(
                 description:
-                    "Stand with your arms at your sides and your palms facing forward. Raise your arms to the sides until they're at shoulder level. Lower your arms back down slowly to the starting position.",
+                    "Stand with your feet shoulder-width apart and your knees slightly bent. Hold your arms out in front of you, palms facing down. Slowly push your arms out in front of you as far as you can. Hold for 2 seconds, then slowly bring your arms back in.",
               ),
             ],
           ),

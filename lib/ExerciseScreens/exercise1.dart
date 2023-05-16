@@ -54,7 +54,7 @@ class _ExerciseScreen1State extends State<ExerciseScreen1> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const ExerciseTitle(title: "Leg Up and Down"),
+        title: const ExerciseTitle(title: "Elbow Flexion"),
         backgroundColor: const Color.fromARGB(255, 7, 175, 175),
       ),
       body: Column(
@@ -63,10 +63,10 @@ class _ExerciseScreen1State extends State<ExerciseScreen1> {
         children: [
           Column(
             children: const [
-              ExerciseImage(imagePath: "appImages/leg_expansion.jpg"),
+              ExerciseImage(imagePath: "appImages/elbow_flexion.png"),
               ExerciseDescription(
                 description:
-                    "Lie on your back with your legs straight and together. Keeping your legs straight, lift them up toward the ceiling until they form a right angle with your torso. ... Slowly lower your legs back down to the starting position. Repeat 10 times.",
+                    "Stand with your arm at your side, elbow bent to 90 degrees and palm facing forward. Slowly raise your hand up toward your shoulder, then lower slowly. Repeat 10 times.",
               ),
             ],
           ),

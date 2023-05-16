@@ -58,12 +58,12 @@ class _ExercisesScreenState extends State<ExercisesScreen> {
       body: ListView(
         children: const [
           ExerciseTile(
-            innerText: "Leg Raises",
-            backgroundColor: Colors.cyan,
+            innerText: "Elbow Flexion",
+            backgroundColor: Colors.deepPurpleAccent,
             id: ExerciseScreen1.id,
           ),
           ExerciseTile(
-            innerText: "Range of Motion",
+            innerText: "Shoulder Flexion",
             backgroundColor: Colors.cyan,
             id: ExerciseScreen2.id,
           ),

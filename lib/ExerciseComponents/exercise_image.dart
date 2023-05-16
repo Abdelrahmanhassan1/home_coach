@@ -11,6 +11,7 @@ class ExerciseImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 400.0,
       padding: const EdgeInsets.all(30.0),
       child: Image.asset(
         imagePath,
